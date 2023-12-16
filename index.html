@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatPhotoApp</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
@@ -41,22 +42,24 @@
         <section>
             <h2>Cat Form</h2>
             <form action="#">
-                <fieldset>
-                    <legend>Is your cat an indoor or outdoor cat?</legend>
-                    <input id="indoor" type="radio" name="indoor-outdoor" value="indoor">
-                    <label for="indoor">Indoor</label>
-                    <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
-                    <label for="outdoor">Outdoor</label>
-                </fieldset>
-                <fieldset>
-                    <legend>What's your cat's personality?</legend>
-                    <input id="loving" type="checkbox" name="personality" value="loving">
-                    <label for="loving">Loving</label>
-                    <input id="lazy" type="checkbox" name="personality" value="lazy">
-                    <label for="lazy">Lazy</label>
-                    <input id="energetic" type="checkbox" name="personality" value="energetic">
-                    <label for="energetic">Energetic</label>
-                </fieldset>
+                <div id="flex-container">
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                        <input id="indoor" type="radio" name="indoor-outdoor" value="indoor">
+                        <label for="indoor">Indoor</label>
+                        <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+                        <label for="outdoor">Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <input id="loving" type="checkbox" name="personality" value="loving">
+                        <label for="loving">Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy">
+                        <label for="lazy">Lazy</label>
+                        <input id="energetic" type="checkbox" name="personality" value="energetic">
+                        <label for="energetic">Energetic</label>
+                    </fieldset>
+                </div>
                 <input type="text" name="cat-photo-url" placeholder="cat photo URL">
                 <button type="submit">Submit</button>
             </form>
