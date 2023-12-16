@@ -89,3 +89,8 @@ button {
     background-color: #E19CBD;
 }
 
+.lists {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
